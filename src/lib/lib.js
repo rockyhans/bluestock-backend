@@ -1,0 +1,1 @@
+// add libraries setup here like nodemailer to send mails
