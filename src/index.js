@@ -68,7 +68,7 @@ app.use(sanitizeMongo);
 app.use(['/home', '/lib', '/server', '/wp-app.log'], (req, res) => res.status(404).end());
 
 // 6. CORS configuration
-const allowedOrigins = [process.env.TEST_FRONTEND_URL, process.env.FRONTEND_URL]; // just added a test frontend url. Remove it later
+const allowedOrigins = [process.env.TEST_FRONTEND_URL, 'https://visit-blue-stock.vercel.app/'];
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
